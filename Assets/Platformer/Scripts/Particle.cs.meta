@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: d21d4f24b78afa04894515e7ba3a6ca7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_ParticleSystem: {fileID: 5377993498371154385, guid: bbf31356056f8764a80253c12f7ff1d8, type: 3}
+  - RaycastShooter: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
