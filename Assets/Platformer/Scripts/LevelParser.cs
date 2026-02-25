@@ -39,7 +39,8 @@ public class LevelParser : MonoBehaviour
     public GameObject brickPrefab;
     public GameObject questionBoxPrefab;
     public GameObject stonePrefab;
-
+    public GameObject goal;
+    public GameObject water;
     void Start()
     {
         LoadLevel();
@@ -94,7 +95,20 @@ public class LevelParser : MonoBehaviour
                     Transform questionInstance = Instantiate(questionBoxPrefab).transform;
                     questionInstance.position = positionQuestion;
                 }
-                
+                if(currentChar == 'g')
+                {
+                    Vector3 positionQuestion = new Vector3(columnIndex, row, 0);
+                    Transform questionInstance = Instantiate(goal).transform;
+                    questionInstance.position = positionQuestion;
+                }
+
+                if (currentChar == 'w')
+                {
+                    Vector3 positionQuestion = new Vector3(columnIndex, row, 0);
+                    Transform questionInstance = Instantiate(water).transform;
+                    questionInstance.position = positionQuestion;
+                }
+
 
 
 
